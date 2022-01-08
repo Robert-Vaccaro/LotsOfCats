@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="LotsOfCats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2XL-Ef-ATD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMs-4v-lPv">
+                                <rect key="frame" x="362" y="56" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="B9k-GR-rWm"/>
+                                    <constraint firstAttribute="width" constant="40" id="wMz-1A-1HF"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system"/>
+                                <connections>
+                                    <action selector="imageSettingsBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNS-ST-4Ll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHV-ng-K8J">
+                                <rect key="frame" x="12" y="56" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="VCI-AQ-3gW"/>
+                                    <constraint firstAttribute="height" constant="40" id="bHc-1W-dZA"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="shareBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdo-G2-GMY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-Ha-54P">
+                                <rect key="frame" x="362" y="120" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0r1-T4-Lbc"/>
+                                    <constraint firstAttribute="width" constant="40" id="6fh-fS-rdH"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="addTextOverlayBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hS3-H6-Li7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-59-RSu">
+                                <rect key="frame" x="362" y="184" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="96b-71-1AL"/>
+                                    <constraint firstAttribute="width" constant="40" id="AYA-Oz-oRg"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="clearTextOverlayBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DgZ-WR-BDv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2XL-Ef-ATD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="13A-8T-pjf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3W-Ha-54P" secondAttribute="trailing" constant="12" id="Oyx-pW-tOf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OMs-4v-lPv" secondAttribute="trailing" constant="12" id="P3t-7m-FEO"/>
+                            <constraint firstItem="dHV-ng-K8J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="VEO-aR-bR3"/>
+                            <constraint firstItem="2XL-Ef-ATD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VRt-hF-t0K"/>
+                            <constraint firstItem="2XL-Ef-ATD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aqq-XB-KGJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oqk-59-RSu" secondAttribute="trailing" constant="12" id="c4o-Lp-vlz"/>
+                            <constraint firstItem="D3W-Ha-54P" firstAttribute="top" secondItem="OMs-4v-lPv" secondAttribute="bottom" constant="24" id="pCF-cv-dWr"/>
+                            <constraint firstItem="dHV-ng-K8J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="rBv-VJ-yml"/>
+                            <constraint firstItem="OMs-4v-lPv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="rV6-Fk-e8N"/>
+                            <constraint firstItem="oqk-59-RSu" firstAttribute="top" secondItem="D3W-Ha-54P" secondAttribute="bottom" constant="24" id="tcy-hn-Ydf"/>
+                            <constraint firstItem="2XL-Ef-ATD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="w27-zH-WzJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addTextOverlayBtn" destination="D3W-Ha-54P" id="gzy-AJ-DBa"/>
+                        <outlet property="catImgView" destination="2XL-Ef-ATD" id="fyr-KF-wp5"/>
+                        <outlet property="clearTextOverlayBtn" destination="oqk-59-RSu" id="dtZ-2K-g9q"/>
+                        <outlet property="imageSettingsBtn" destination="OMs-4v-lPv" id="UpN-42-rnd"/>
+                        <outlet property="shareBtn" destination="dHV-ng-K8J" id="Zzc-Am-SVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
